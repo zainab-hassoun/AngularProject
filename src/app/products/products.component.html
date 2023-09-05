@@ -1,0 +1,14 @@
+<div class="row itemsBlock">
+  <div *ngFor="let item of meals" class="col-3 col-3 col-3 col-3 col-3">
+    <div class="card">
+      <img class="card-img-top" src={{item.image}} style="height: 150px;"> 
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}} </h5>
+        
+        <p class="card-text"> price: {{item.price}}$</p>
+        <button class="btn btn-primary" (click)="add(item)">add to cart</button> 
+      </div>
+    </div>
+  </div>
+</div>
+ 

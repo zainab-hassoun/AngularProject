@@ -1,0 +1,31 @@
+<div class=col-6>
+<form [formGroup]="registerForm" (ngSubmit)="onsumbit()">
+    <div class="form-group">
+    <label> Name :</label>
+     <input  type="text" formControlName="name" class="form-control" name="name" required>
+    </div>
+    <div class="form-group">
+        <label> Mail :</label>
+         <input name="email" type="email" formControlName="email" class="form-control" required email>
+        </div>
+        <div class="form-group">
+            <label> password :</label>
+             <input name="pass" type="password" formControlName="pass" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Birth Date</label>
+                <input type="date"  class="form-control" formControlName="birthday"  name="birthday" >
+            </div>
+            <div class="form-group" >
+                <input type="radio" id="female" name="gender" value="female" formControlName="gender" >
+                <label for="female">female</label>
+                <br>
+                <input type="radio" id="male" name="gender" value="male" formControlName="gender" >
+                <label for="male">male</label>
+                </div>
+          
+        
+ <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">Submit</button>
+
+</form>
+</div>

@@ -1,0 +1,66 @@
+
+html {
+    box-sizing: border-box;
+  }
+  
+  .center{
+      text-align: center;
+      background-color:lightgray;
+      padding: 8px;
+      color:cornflowerblue;
+    }
+  .column {
+    float: left;
+   width: 23%;
+    margin-bottom: 8px;
+    padding: 0 8px ; 
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+    .p1{
+      text-align: center;
+      color:cornflowerblue;
+  
+    }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 ;
+  
+  }
+  .container {
+      padding: 0 6px;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color:cornflowerblue;
+      background-color:gray;
+      text-align: center;
+      cursor: pointer;
+      width: 10%;
+    }
+    
+    .button:hover {
+      background-color:darkgrey;
+    }
+    
+    
+    .img2{
+        margin:30px;
+        width:50%;
+        border-radius: 200px;
+    }
+    
+    
+    

@@ -1,0 +1,25 @@
+<h1>Top 5 choices</h1>
+<div class="card-deck">
+    <div class="card" *ngFor="let item of product">
+      <img class="card-img-top" src={{item.image}} >
+      <div class="card-body">
+        <h4 class="card-title">{{item.title}} </h4>
+        <p class="card-text">{{item.name}}</p>
+        <p class="card-text"> price: {{item.price}}</p>
+        <a href="#!" class="btn btn-primary" (click)="add(item)">add to cart</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <h3>contact us</h3>
+  <div class="col-lg-4">
+    <a href="" target="_blank" ><i class="bi bi-facebook"></i> </a> 
+    &nbsp;
+    <a href="" target="_blank"><i class="bi bi-whatsapp"></i> </a>
+    &nbsp;
+    <a href="" target="_blank"><i class="bi bi-instagram"></i> </a>
+    &nbsp;
+    <a href="" target="_blank"><i class="bi bi-twitter"></i> </a>
+</div>
+

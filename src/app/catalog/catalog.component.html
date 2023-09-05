@@ -1,0 +1,10 @@
+
+<H3 style="text-align:center;">WELCOME TO THE CATALOG..</H3>
+<div class="row">
+  <div class="col-md-2" >
+    <app-themes (optionChanged)="setOption($event)"></app-themes>
+  </div>
+  <div class="col-sm">
+    <app-products  [option]="_option"></app-products>
+  </div>
+</div>

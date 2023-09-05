@@ -1,0 +1,22 @@
+<ul>
+    <li><a routerLinkActive="active" routerLink="home">Home</a></li>
+    <li><a routerLinkActive="active" routerLink="catalog">menu</a></li>
+    <li><a routerLinkActive="active" routerLink="about">About</a></li>
+    <li> <a  *ngIf="!islogin2"  routerLinkActive="active" routerLink="profile">login</a>
+        <a  *ngIf="islogin2" (click)="onLogout()" routerLink='profile'> Logout</a>
+    </li> 
+    
+    <li> <a routerLinkActive="active" routerLink="cart">
+        <i style="font-size: 20px;" class="bi bi-cart"> </i>
+        </a>
+    </li>
+
+    <li> 
+     <a *ngIf="gender=='female'"  routerLinkActive="active" (click)="onLogout()" >
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922572.png" width="30px" height="30px">
+        </a>
+        <a *ngIf="gender=='male'" routerLinkActive="active"  routerLink="home"  (click)="onLogout()">
+            <img src="https://cdn-icons-png.flaticon.com/128/4439/4439947.png" width="30px" height="30px">
+            </a>
+    </li>
+  </ul>
